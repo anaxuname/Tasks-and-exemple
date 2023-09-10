@@ -1,7 +1,7 @@
 """
 Создать класс Song с полями track_title , track_artist, track_duration
 
-Создать на его основе класс детеныi DetailedSong с полями desctiption, url, genre
+Создать на его основе класс детеныi DetailedSong с полями description, url, genre
 """
 
 class Song:
@@ -13,8 +13,8 @@ class Song:
 
 class DetailedSong(Song):
 
-    def __init__(self, desctiption, url, genre):
-        super.__init__(track_title , track_artist, track_duration)
-        self.desctiption = desctiption
+    def __init__(self, description, url, genre, track_title, track_artist, track_duration):
+        super().__init__(track_title, track_artist, track_duration)
+        self.description = description
         self.url = url
         self.genre = genre

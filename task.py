@@ -1,5 +1,5 @@
 """
-Создать класс Task с названием и описанием
+Создать класс Task с названием и описанием.
 Наследовать от него класс ToDoTask c булевым полем is_completed
 """
 
@@ -12,6 +12,6 @@ class Task:
 
 class ToDoTask(Task):
 
-    def __init__(self, is_completed = True):
-        super.__init__(name, description)
+    def __init__(self, name, description, is_completed: bool = True) -> None:
+        super().__init__(name, description)
         self.is_completed = is_completed
